@@ -1,4 +1,4 @@
-int amount = 5;
+int amount = 1;
 
 List<Student> students = new List<Student>
 {
@@ -8,6 +8,8 @@ List<Student> students = new List<Student>
     new Student { Name = "Adventure Works", WeiAverageGradeght = 7.5, ModuleCount = 5 }
 };
 
+// Example 1
+
 var list = (from x in students where x.AverageGrade > 7 &&
-        x.ModuleCount == amount orderby x.AverageGrade select x)
+        x.ModuleCount == 5 orderby x.AverageGrade select x)
     .Take(amount);

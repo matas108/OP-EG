@@ -1,12 +1,12 @@
 // Creating object of list  
-List<string> stringlist = new List<string>();
-
-// Adding items to list  
-stringlist.Add("a");
-stringlist.Add("b");
-stringlist.Add("c");
-stringlist.Add("d");
-stringlist.Add("e");
+List<string> stringlist = new List<string>
+{
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+};
 
 // Deleting item by remove function by passing object  
 string a = stringlist.FirstOrDefault(st => st == "a");
