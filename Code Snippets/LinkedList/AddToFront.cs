@@ -1,3 +1,5 @@
+// Count++ in `if` & `else` if LinkedList has .Count propery
+
 public void AddToFront(T data)
 {
 	if (begin == null)

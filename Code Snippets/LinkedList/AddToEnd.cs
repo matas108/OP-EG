@@ -1,3 +1,5 @@
+// Count++ in `if` & `else` if LinkedList has .Count propery
+
 public void Add(T data)
 {
 	if (begin == null)
@@ -12,6 +14,5 @@ public void Add(T data)
 
 		end.Next = temp;
 		end = temp;
-
 	}
 }
