@@ -17,3 +17,10 @@ public void AddToFront(T data)
 		//Count++;
 	}
 }
+
+//Example in university slides
+public void AddToFront(T data)
+{
+	begin = new Node(data, begin);
+	//Count++
+}
