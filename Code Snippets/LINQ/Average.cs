@@ -35,6 +35,5 @@ double result = (from x in list select x).Average();
 
 var stringList = new List<string> { "1", "88888888", "333", "22" };
 
-// these two lines do the same
 double result = stringList.Select(x => x.Length).Average();  // Result: 3.5
 double result = stringList.Average(x => x.Length);           // Result: 3.5
