@@ -38,3 +38,28 @@ var list = new List<int> { 8, 2, 6, 3 };
 int sum = (from x in list where x > 4 select x).Sum();
 
 // Result: 14
+
+// Example 4
+
+IList<Student> studentList = new List<Student>>() { 
+        new Student() { StudentID = 1, StudentName = "John", Age = 13} ,
+        new Student() { StudentID = 2, StudentName = "Moin",  Age = 21 } ,
+        new Student() { StudentID = 3, StudentName = "Bill",  Age = 18 } ,
+        new Student() { StudentID = 4, StudentName = "Ram" , Age = 20} ,
+        new Student() { StudentID = 5, StudentName = "Ron" , Age = 15 } 
+    };
+
+var sumOfAge = studentList.Sum(s => s.Age);
+		
+var numOfAdults = studentList.Sum(s => {
+			
+	if(s.Age >= 18)
+	    return 1;
+	else
+	    return
+
+ 0;
+});
+
+// Total Age of Student: 87
+// Total Adult Students: 3 
